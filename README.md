@@ -2,6 +2,17 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+## Packages install in this project
+Sanity is for the backend for this project
+npm install -g @sanity/cli
+sanity init --coupon javascriptmastery2022 or 
+sanity init --coupon sonny2022
+
+Frontend packages installed
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+check out the tailwindcss config
+
 First, run the development server:
 
 ```bash
