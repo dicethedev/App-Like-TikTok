@@ -1,3 +1,5 @@
+// this query are sanity query.. you check sanity query documentation
+
 export const allPostsQuery = () => {
   const query = `*[_type == "post"] | order(_createdAt desc){
     _id,
