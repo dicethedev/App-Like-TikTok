@@ -9,7 +9,7 @@ import { GoVerified } from 'react-icons/go'
 import { Video } from '../types.dev'
 
 interface IProps {
-  post: Video
+   post: Video
 }
 
 const VideoCard: NextPage<IProps> = ({ post }) => {
@@ -39,7 +39,7 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
           <div className="md:w-16 md:h-16 w-10 h-10">
             <Link href="/">
               <>
-              <Image width={62} height={62} className="rounded-full" src={post.postedBy.image} alt="profile image" layout="responsive" />
+              <Image width={60} height={60} className="rounded-full" src={post.postedBy.image} alt="profile image" layout="responsive" />
               </>
             </Link>
           </div>
@@ -55,10 +55,10 @@ const VideoCard: NextPage<IProps> = ({ post }) => {
         </Link>
       </div>
 
-       <div className="lg:ml-20 flex gap-4 relative">
+       <div className="lg:ml-20 flex gap-4 relative mt-10">
             <div className="rounded-3xl" onMouseEnter={() => setIsHover(true)} onMouseLeave={() => setIsHover(false)}>
-              <Link href="/">
-                <video src={post.video.asset.url} ref={videoRef} loop className="lg:w[600px] h-[300px] md:h-[400px] lg:h-[530px] w-[200px] rounded-2xl cursor-pointer bg-gray-200">
+              <Link href={`/details/${post._id}`}>
+                <video src={post.video.asset.url} ref={videoRef} loop className="lg:w-[600px] h-[300px] md:h-[400px] lg:h-[530px] w-[200px] rounded-2xl cursor-pointer bg-gray-200">
                 </video>
               </Link>
                  
