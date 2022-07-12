@@ -13,6 +13,9 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 check out the tailwindcss config
 
+====== The lasted Google Auth to sign in and sign out their platform ========
+npm install @react-oauth/google@latest
+//===========================================================================
 First, run the development server:
 
 ```bash
