@@ -120,7 +120,8 @@ const Upload = () => {
                                                Select File
                                           </p>
                                       </div>
-                                       <input type="file" name="upload-video" className="w-0 h-0" onChange={uploadVideo} />
+                                       <input type="file" name="upload-video" className="w-0 h-0" 
+                                       onChange={uploadVideo} />
                                    </label>
                                  )}
                               </div>
