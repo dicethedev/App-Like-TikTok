@@ -29,7 +29,6 @@ const Home = ({ videos } : IProps) => {
   )
 }
 
-//Server-Side Rendering on Next.js
 export const getServerSideProps = async () => {
   //check api folder for post folder
   // const response = await axios.get(`http://localhost:3000/api/post`);
