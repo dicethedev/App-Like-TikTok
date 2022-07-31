@@ -9,7 +9,7 @@ export default async function handler( req: NextApiRequest,
 {
 
   if(req.method === 'GET') {
-     const { id } = req.query;
+     const { id }: any  = req.query;
 
      const query = singleUserQuery(id);
      const userVideosQuery = userCreatedPostsQuery(id);
