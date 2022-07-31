@@ -35,7 +35,6 @@ const Profile = ({ data }: IProps) => {
         }
       }, [showUserVideos, userVideos, userLikedVideos])
 
-
      return (
           <div className="w-full">
                <div className="flex gap-6 md:gap-10 mb-4 bg-white w-full">
